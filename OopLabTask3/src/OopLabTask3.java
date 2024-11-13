@@ -1,3 +1,8 @@
+
+import java.util.List;
+import java.util.ArrayList;
+import java.util.Date;
+
 class Garment {
 
     public String id;
@@ -17,11 +22,24 @@ class Garment {
         return discount;
     }
 }
+
+class Fabric {
+
+    public String id;
+    public String type;
+    public String color;
+    public double pricePerMeter;
+
+    double calculateCost(double meters) {
+        double newPrice = pricePerMeter * meters;
+        return newPrice;
+    }
+}
+
 public class OopLabTask3 {
 
-    
     public static void main(String[] args) {
-        System.out.println("hi");
+        System.out.println("");
     }
-    
+
 }
